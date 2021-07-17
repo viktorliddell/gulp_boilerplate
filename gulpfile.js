@@ -27,7 +27,7 @@ function buildSass() {
     .src('sass/style.scss')
     .pipe(gp.plumber())
     .pipe(gp.sourcemaps.init())
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(gp.autoprefixer())
     .pipe(gp.csso())
     .pipe(gp.rename('styles.min.css'))
