@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+html {
+	font-size: 16px;
+	color: $black;
+}
+
+body {
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	min-width: 320px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	background-color: $bodyBg;
+}
+
+.wrap {
+	@include min-max(320px, 576px, 15px);
+}
+
+.hidden {
+	@include visually-hidden();
+}

@@ -1,0 +1,30 @@
+.test {
+
+    &__images {
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__image-item {
+        margin: 0 50px;
+        width: 90px;
+    }
+
+    &__text {
+        margin-top: 75px;
+        color: $mainText;
+        text-align: center;
+    }
+
+    &__span {
+        &--gulp {
+            color: $mainRed;
+        }
+
+        &--boilerplate {
+            color: $mainBlue;
+        }
+    }
+}
